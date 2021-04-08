@@ -4,9 +4,131 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo"></a>
+        <img class="page-header__logo-image" src="img/logosedona/logotype-mobile.svg.png" width="102" height="84" alt="Седона">
+        <span class="page-header__hamburger"></span>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav_block">
+          <ul class="nav_list">
+            <li class="nav_item nav_item-active">
+              <a class="nav_link">
+              Главная
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="photo.html">
+              Фото и видео
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="form.html">
+              Форма отзыва
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">
+              HTML Academy
+              </a>
+            </li>
+          </ul>
+    </header>
+    <main class="page-main">
+      <h1 class="hidden_title">SEDONA</h1>
+      <section class="start">
+        <div class="start_wrapper">
+          <div class="start_img"><img src="img/start/text-index.svg" width="282" height="214" alt="welcome">
+          </div>
+        </div>
+        <h2 class="start_slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающийвающий большего!</h2>
+        <p class="start_intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <section class="advantages">
+        <div class="advantages_block">
+          <h3 class="advantages_intro">НАСТОЯЩИЙ ГОРОДОК</h3>
+          <p class="advantages_number counter">1</p>
+          <p class="advantages_info">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img src="img/advantages/photo-city1x 1.png" width="520" height="260" alt="city">
+        </div>
+        <div class="advantages_block-products">
+          <div class="advantages_block-product">
+            <img src="img/advantages/products/icon-house.svg" wight="37" height="40" alt="house">
+            <h3 class="advantages_heading">Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="advantages_block-product">
+            <img src="img/advantages/products/icon-gift.svg" wight="32" height="38" alt="gift">
+            <h3 class="advantages_title">СУВЕНИРЫ</h3>
+            <p class="advantages_suptitle">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="advantages_block-product">
+            <img src="img/advantages/products/icon-burger.svg" wight="40" height="35" alt="burger">
+            <h3 class="advantages_title">ЕДА</h3>
+            <p class="advantages_suptitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
+        </div>
+      </section>
+      <section class="inform">
+        <div class="inform_block">
+          <h3 class="inform_title">ТАМ ЕСТЬ Мост дьявола</h3>
+          <p class="inform_counter">2</p>
+          <p class="inform_subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img src="img/advantages/photo-bridge 1.png" wight="520" height="260" alt="bridge">
+        </div>
+        <div class="inform_block">
+          <h3 class="inform_intro">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <p class="inform_counter">3</p>
+          <p class="inform_subtitle">ВСЕ интересные места находятся очень близко</p>
+        </div>
+        <div class="inform_block">
+          <h3 class="inform_intro">КРАСИВАЯ ДОРОГА</h3>
+          <p class="inform_counter">4</p>
+          <p class="inform_subtitle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        </div>
+        <div class="inform_block">
+          <h3 class="inform_intro">МАЛО ТУРИСТОВ</h3>
+          <p class="inform_counter">5</p>
+          <p class="inform_subtitle">Большинство едет в гранд каньони толпится там</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="interest">
+        <h3 class="interest_title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="interest_suptitle">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+        <button class="interest_button">НАЙТИ гостиницу</button>
+      </section>
+      <div class="map">
+        <img src="img/map.jpg" wight="320" height="350" alt="map">
+      </div>
+      <div class="social">
+        <h3 class="social_title">#visitSEDONA</h3>
+        <ul class="social_list">
+          <li class="social_item">
+            <a class="social_list-tvitter" href="#">
+              <img src="img/social/social-twitter.svg" wight="18" height="15" alt="twitter">
+            </a>
+          </li>
+          <li class="social_item">
+            <a class="social_list-facebook" href="#">
+              <img src="img/social/social-facebook.svg" wight="18" height="15" alt="facebook">
+            </a>
+          </li>
+          <li class="social_item">
+            <a class="social_list-youtube" href="#">
+              <img src="img/social/social-youtube.svg" wight="18" height="15" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div calss="social_link">
+        <a href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/htmlacademy.svg" wight="27" height="35" alt="htmlacademy">Разработано</a>
+      </div>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+
 
   </body>
 </html>
