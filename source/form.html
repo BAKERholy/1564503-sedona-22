@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo"></a>
+        <img class="page-header__logo-image" src="img/logosedona/logotype-mobile.svg.png" width="102" height="84" alt="Седона">
+        <span class="page-header__hamburger"></span>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav_block">
+          <ul class="nav_list">
+            <li class="nav_item nav_item-active">
+              <a class="nav_link" href="index.html">
+              Главная
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="photo.html">
+              Фото и видео
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">
+              Форма отзыва
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">
+              HTML Academy
+              </a>
+            </li>
+          </ul>
+    </header>
+    <main>
+      <form class="form">
+        <fieldset class="form_block">
+          <legend class="form_title">Представьтесь:</legend>
+          <p>ИМЯ:<input placeholder="Петр" name="user"></p>
+          <p>ФАМИЛИЯ:<input placeholder="Иванов" name="surname"></p>
+          <p>Отчество:<input placeholder="Александрович" name="patronymic"></p>
+        </fieldset>
+        <fieldset class="form_block">
+          <legend class="form_title">Контактная информация:</legend>
+          <p>Контактный телефон:</p>
+          <input placeholder="Введите телефон" type="tel" name="tel">
+          <p>Электронная почта:</p>
+          <input placeholder="Введите e-mail" type="email" name="email">
+        </fieldset>
+        <fieldset class="form_block">
+          <p><legend class="form_title">ВАше Общее впечатление:</legend>
+          <p><input type="radio" name="impression" value="Скорее положительное"checked> Скорее положительное</p>
+          <p><input type="radio" name="impression" value="Скорее отрицательное"> Скорее отрицательное</p>
+          <p><input type="radio" name="impression" value="Затрудняюсь ответить">Затрудняюсь ответить</p>
+        </fieldset>
+        <fieldset class="form_block">
+          <legend class="form_title">посещенные достопримечательности:</legend>
+          <p><input type="checkbox" name="attractions" value="Мост Дьявола" checked>Мост Дьявола</p>
+          <p><input type="checkbox" name="attractions" value="Гора-Колокол" checked>Гора-Колокол</p>
+          <p><input type="checkbox" name="attractions" value="Слайд-парк" checked>Слайд-парк</p>
+          <p><input type="checkbox" name="attractions" value="Красные скалы">Красные скалы</p>
+        </fieldset>
+        <fieldset class="form_block">
+          <legend class="form_title">Опишите свои эмоции:</legend>
+          <textarea name="Опишите подробно все свои восторги ">Опишите подробно все свои восторги </textarea>
+          <button>ОТПРАВИТЬ ОТЗЫВ</button>
+        </fieldset>
+
+
+
+    </main>
+    <footer>
+      <section class="interest">
+        <h3 class="interest_title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="interest_suptitle">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+        <button class="interest_button">НАЙТИ гостиницу</button>
+      </section>
+      <div class="map">
+        <img src="img/map.jpg" wight="320" height="350" alt="map">
+      </div>
+      <div class="social">
+        <h3 class="social_title">#visitSEDONA</h3>
+        <ul class="social_list">
+          <li class="social_item">
+            <a class="social_list-tvitter" href="#">
+              <img src="img/social/social-twitter.svg" wight="18" height="15" alt="twitter">
+            </a>
+          </li>
+          <li class="social_item">
+            <a class="social_list-facebook" href="#">
+              <img src="img/social/social-facebook.svg" wight="18" height="15" alt="facebook">
+            </a>
+          </li>
+          <li class="social_item">
+            <a class="social_list-youtube" href="#">
+              <img src="img/social/social-youtube.svg" wight="18" height="15" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div calss="social_link">
+        <a href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/htmlacademy.svg" wight="27" height="35" alt="htmlacademy">Разработано</a>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
