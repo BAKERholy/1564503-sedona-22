@@ -1,0 +1,97 @@
+%details__item-before {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5%;
+  display: block;
+  width: 38px;
+  height: 38px;
+  content: "";
+}
+
+.advantages-details {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 20px;
+
+  &__text {
+    margin-left: 22%;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #333333;
+    text-align: left;
+  }
+
+  &__title {
+    font-family: "PT Sans B", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    margin-left: 5%;
+
+    &::before {
+      @extend %details__item-before;
+    }
+  }
+
+  &__item {
+    &--first .advantages-details__title::before {
+      background-image: url("../img/advantages/products/icon-house.svg");
+    }
+
+    &--second .advantages-details__title::before {
+      background-image: url("../img/advantages/products/icon-gift.svg");
+    }
+
+    &--third .advantages-details__title::before {
+      background-image: url("../img/advantages/products/icon-burger.svg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 30%;
+    }
+
+    .advantages-list__item--spec {
+      .advantages__list--img {
+        max-width: 60%;
+      }
+    }
+
+    &__title {
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-left: 0;
+
+      &::before {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 76px;
+        height: 76px;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+

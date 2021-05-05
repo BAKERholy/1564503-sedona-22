@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,8 +43,8 @@
     <form class="form">
       <fieldset class="form_block">
         <legend class="form_title">Представьтесь:</legend>
-        <p>ИМЯ:<input placeholder="Петр" name="user"></p>
-        <p>ФАМИЛИЯ:<input placeholder="Иванов" name="surname"></p>
+        <p>Имя:<input placeholder="Петр" name="user"></p>
+        <p>Фамилия:<input placeholder="Иванов" name="surname"></p>
         <p>Отчество:<input placeholder="Александрович" name="patronymic"></p>
       </fieldset>
       <fieldset class="form_block">
@@ -55,13 +56,13 @@
       </fieldset>
       <fieldset class="form_block">
         <p>
-          <legend class="form_title">ВАше Общее впечатление:</legend>
+          <legend class="form_title">Ваше Общее впечатление:</legend>
         <p><input type="radio" name="impression" value="Скорее положительное" checked> Скорее положительное</p>
         <p><input type="radio" name="impression" value="Скорее отрицательное"> Скорее отрицательное</p>
         <p><input type="radio" name="impression" value="Затрудняюсь ответить">Затрудняюсь ответить</p>
       </fieldset>
       <fieldset class="form_block">
-        <legend class="form_title">посещенные достопримечательности:</legend>
+        <legend class="form_title">Посещенные достопримечательности:</legend>
         <p><input type="checkbox" name="attractions" value="Мост Дьявола" checked>Мост Дьявола</p>
         <p><input type="checkbox" name="attractions" value="Гора-Колокол" checked>Гора-Колокол</p>
         <p><input type="checkbox" name="attractions" value="Слайд-парк" checked>Слайд-парк</p>
@@ -99,6 +100,28 @@
           alt="htmlacademy">Разработано</a>
     </div>
   </footer>
+  <div class="modal__error">
+    <h3 class="modal__error-tittle">
+      ЧТО-ТО ПОШЛО НЕ ТАК!
+    </h3>
+    <p class="modal__error-text">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="modal__error-button">
+      OK
+    </button>
+  </div>
+  <div class="modal__done">
+    <h3 class="modal__done-tittle">
+      Ваш отзыв отправлен!
+    </h3>
+    <p class="modal__done-text">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <button class="modal__done-button">
+      ЗАкРЫТЬ ОКНО
+    </button>
+  </div>
 
 
 

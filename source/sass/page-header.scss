@@ -1,0 +1,28 @@
+.page-header {
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  z-index: 2;
+}
+
+.page-header__logo-image {
+
+}
+
+@media (min-width: 768px) {
+  .page-header{
+    padding-bottom: unset;
+  }
+
+  .page-header__logo{
+    bottom: unset;
+    top: 0;
+    z-index: 10;
+  }
+}
