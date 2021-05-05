@@ -38,36 +38,60 @@
             </a>
           </li>
         </ul>
+      </div>
+    </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main photo">
+    <section class="photo__start">
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <div class="photo__start--img">
+        <img class="photo__start--img__picture" src="./img/SEDONA.svg" width="282" height="50" alt="welcome">
+      </div>
+    </section>
     <h1 class="visually-hidden">Sedona</h1>
-    <section class="photo">
-      <h2 class="photo__title">Фото и видео</h2>
-      <p class="photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <ul class="photo__list photo-list">
+    <section class="photo__block">
+      <h2 class="photo__block--title">Фото и видео</h2>
+      <p class="photo__block--text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="photo__block--list">
         <li class="photo-list">
           <img src="/img/photo/photo-1.jpg" alt="prostory" class="photo-list__photo">
-          <h3 class="photo-list__title">неродные просторы</h3>
-          <p class="photo-list__author">Автор фото: Борис</p>
-          <p class="photo-list__like">1350</p>
+          <div class="photo-list__text">
+            <div class="">
+              <h3 class="photo-list__title">неродные просторы</h3>
+              <p class="photo-list__author">Автор фото: Борис</p>
+            </div>
+            <p class="photo-list__like">1350</p>
+          </div>
         </li>
         <li class="photo-list">
           <img src="/img/photo/photo-2.jpg" alt="rastitelnost" class="photo-list__photo">
-          <h3 class="photo-list__title">Местная растительность</h3>
-          <p class="photo-list__author">Автор фото: Сергей</p>
-          <p class="photo-list__like">143</p>
+          <div class="photo-list__text">
+            <div class="">
+              <h3 class="photo-list__title">Местная растительность</h3>
+            <p class="photo-list__author">Автор фото: Сергей</p>
+            </div>
+            <p class="photo-list__like">143</p>
+          </div>
         </li>
         <li class="photo-list">
           <img src="/img/photo/photo-3.jpg" alt="doroga" class="photo-list__photo">
-          <h3 class="photo-list__title">Дорога на север</h3>
-          <p class="photo-list__author">Автор фото: Петр</p>
-          <p class="photo-list__like">96</p>
+          <div class="photo-list__text">
+            <div class="">
+              <h3 class="photo-list__title">Дорога на север</h3>
+              <p class="photo-list__author">Автор фото: Петр</p>
+            </div>
+            <p class="photo-list__like">96</p>
+          </div>
         </li>
         <li class="photo-list">
           <img src="/img/photo/photo-4.jpg" alt="most" class="photo-list__photo">
-          <h3 class="photo-list__title">Мост дьявола</h3>
-          <p class="photo-list__author">Автор фото: Антон</p>
-          <p class="photo-list__like">254</p>
+          <div class="photo-list__text">
+            <div class="">
+              <h3 class="photo-list__title">Мост дьявола</h3>
+              <p class="photo-list__author">Автор фото: Антон</p>
+            </div>
+            <p class="photo-list__like">254</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -75,31 +99,45 @@
       <h3 class="video__title">Все еще сомневаетесь?</h3>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <img src="/img/photo/video-mobile.jpg" alt="video" class="video__slide">
+      <div class="video__controls">
+        <div class="video__controls-range">
+          <input type="range" max="100">
+        </div>
+        <div class="video__controls-buttons">
+          <button class="video__controls-buttons-replay" type="button"></button>
+          <div class="video__controls-buttons-wrapper">
+            <button type="button" class="subtitres"></button>
+            <button type="button" class="all-screen"></button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
     <div class="social">
-      <h3 class="social_title">#visitSEDONA</h3>
-      <ul class="social_list">
-        <li class="social_item">
-          <a class="social_list-tvitter" href="#">
+      <h3 class="social__title">#visitSEDONA</h3>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__list-tvitter" href="#">
             <img src="img/social/social-twitter.svg" wight="18" height="15" alt="twitter">
           </a>
         </li>
-        <li class="social_item">
-          <a class="social_list-facebook" href="#">
+        <li class="social__item">
+          <a class="social__list-facebook" href="#">
             <img src="img/social/social-facebook.svg" wight="18" height="15" alt="facebook">
           </a>
         </li>
-        <li class="social_item">
-          <a class="social_list-youtube" href="#">
+        <li class="social__item">
+          <a class="social__list-youtube" href="#">
             <img src="img/social/social-youtube.svg" wight="18" height="15" alt="youtube">
           </a>
         </li>
       </ul>
     </div>
-    <div calss="social_link">
-      <a href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/htmlacademy.svg" wight="27" height="35"
-          alt="htmlacademy">Разработано</a>
+    <div class="social__link">
+      <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <img src="img/htmlacademy.svg" wight="27" height="35" alt="htmlacademy">
     </div>
   </footer>
+  </body>
+</html>

@@ -1,77 +1,228 @@
 .photo {
   padding: 0;
   margin: 0;
+
+  &__start {
+    padding: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/start/background.jpg);
+    background-size: cover;
+    position: relative;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url("../img/start/triangle.svg");
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      background-size: auto;
+      background-position: bottom center;
+    }
+  }
+
+  &__block {
+    &--title {
+      font-family: "PT Sans B", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #000000;
+      text-align: center;
+    }
+
+    &--text {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      width: 85%;
+      margin: 0 auto;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #333333;
+      text-align: center;
+    }
+
+    &--list {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      &__author {
+        font-family: "PT Sans", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #000000;
+        text-align: left;
+      }
+
+      &__like {
+        font-family: "PT Sans B", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #000000;
+        text-align: left;
+      }
+
+      &__like::after {
+        content: "";
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 21px;
+        background-image: url(../img/photo/like-icon.svg.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        background-position: left;
+      }
+    }
+  }
+
+
+  &-list {
+    padding: 20px;
+    border-top: 1px solid #E5E5E5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+
+    &__title {
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      font-family: "PT Sans B", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+    }
+
+    &__author {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+    }
+
+    &__like {
+      font-family: "PT Sans B", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      margin: 0;
+
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 21px;
+        background-image: url(../img/photo/like-icon.svg.svg);
+        display: block;
+        background-position: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__start {
+      padding-top: 65px;
+      padding-bottom: 75px;
+    }
+
+    &__block {
+      &--list {
+        padding-top: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        li:first-child {
+          flex: 0 0 100%;
+          img {
+            max-height: 400px;
+          }
+        }
+      }
+    }
+    &-list {
+      border: none;
+      flex: 0 0 50%;
+      padding: 0;
+      &__text {
+        background-color: #EAEAEA;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
-.photo__title {
-  font-family: "PT Sans B", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000000;
-  text-align: center;
-}
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative;
+  &__text {
+    width: 85%;
+  }
 
-.photo__text {
-  font-family: "PT Sans B", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000000;
-  text-align: center;
-}
+  &__controls {
+    width: 80%;
+    position: absolute;
+    bottom: 14px;
+    left: 10%;
 
-.photo__list {
+    &-range {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
 
-}
+      padding: 20px 0;
 
-.photo-list {
+      input {
+        width: 90%;
+        opacity: 1;
+      }
+    }
 
-}
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
 
-.photo-list__title {
-  padding: 0;
-  margin: 0;
-  font-family: "PT Sans B", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000000;
-  text-align: left;
-}
-
-.photo-list__author {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000000;
-  text-align: left;
-}
-
-.photo-list__like {
-  font-family: "PT Sans B", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000000;
-  text-align: left;
-}
-
-.photo-list__like::after {
-  content: "";
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 21px;
-  background-image: url(../img/photo/like-icon.svg.svg);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background-position: left;
+      &-wrapper {
+        display: flex;
+      }
+    }
+  }
 }
