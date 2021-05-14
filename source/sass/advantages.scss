@@ -1,0 +1,46 @@
+.advantages {
+  &__title {
+    margin: 0 auto;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  &__list {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-image: url('../img/advantages/arrow_down.svg');
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+    }
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin-bottom: -3px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

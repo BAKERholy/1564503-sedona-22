@@ -1,0 +1,26 @@
+.nav {
+  position: relative;
+  z-index: 1;
+}
+
+.nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+@media screen and (min-width: 768px){
+  .nav__toggle {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
