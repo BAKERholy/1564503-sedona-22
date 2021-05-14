@@ -1,0 +1,40 @@
+.radio__label {
+  font-family: "PT Sans B", Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 60px;
+  position: relative;
+  cursor: pointer;
+  min-height: 53px;
+  display: inline-block;
+  padding-top: 15px;
+  vertical-align: top;
+   &::before {
+     content:"";
+     position: absolute;
+     width: 53px;
+     height: 53px;
+     display: block;
+     left: 0;
+     top: 0;
+     background-color: #F2F2F2;
+     border-radius: 50%;
+   }
+   &::after {
+    content:"";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 16px;
+    top: 16px;
+    background-color: #333333;
+    border-radius: 50%;
+    display: none;
+   }
+}
+
+.radio__input:checked + .radio__label::after {
+  display: block;
+
+}

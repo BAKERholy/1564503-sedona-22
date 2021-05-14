@@ -1,0 +1,59 @@
+  .photo-list {
+    padding: 20px;
+    border-top: 1px solid #E5E5E5;
+    margin: 0;
+    list-style: none;
+  }
+    .photo-list__title {
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      font-family: "PT Sans B", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+    }
+
+    .photo-list__author {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+    }
+
+    .photo-list__like {
+      font-family: "PT Sans B", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #000000;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      margin: 0;
+
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 21px;
+        background-image: url(../img/photo/like-icon.svg.svg);
+        display: block;
+        background-position: left;
+      }
+    }
+    .photo-list__img-container {
+      margin: 0 20px;
+    }
+
+    .photo-list__photo {
+      width: 100%;
+    }
+
