@@ -11,11 +11,8 @@
   z-index: 2;
 }
 
-.page-header__logo-image {
 
-}
-
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .page-header{
     padding-bottom: unset;
   }

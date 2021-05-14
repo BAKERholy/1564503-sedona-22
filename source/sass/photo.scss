@@ -59,7 +59,7 @@
     }
 
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     .photo__start {
       padding-top: 65px;
       padding-bottom: 75px;
@@ -94,42 +94,4 @@
   }
 
 
-.video {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  position: relative;
-  &__text {
-    width: 85%;
-  }
 
-  &__controls {
-    width: 80%;
-    position: absolute;
-    bottom: 14px;
-    left: 10%;
-
-    &-range {
-      background-color: rgba(0, 0, 0, 0.6);
-      text-align: center;
-
-      padding: 20px 0;
-
-      input {
-        width: 90%;
-        opacity: 1;
-      }
-    }
-
-    &-buttons {
-      display: flex;
-      justify-content: space-between;
-
-      &-wrapper {
-        display: flex;
-      }
-    }
-  }
-}
