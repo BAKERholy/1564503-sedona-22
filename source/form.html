@@ -57,9 +57,24 @@
       <fieldset class="form_block">
         <p>
           <legend class="form_title">Ваше Общее впечатление:</legend>
-        <p><input type="radio" name="impression" value="Скорее положительное" checked> Скорее положительное</p>
-        <p><input type="radio" name="impression" value="Скорее отрицательное"> Скорее отрицательное</p>
-        <p><input type="radio" name="impression" value="Затрудняюсь ответить">Затрудняюсь ответить</p>
+        <p class="radio">
+          <input class="radio__input visually-hidden" type="radio" id="plus" name="impression" value="Скорее положительное" checked>
+          <label class="radio__label" for="plus">
+           Скорее положительное
+          </label>
+          </p>
+          <p class="radio">
+            <input class="radio__input visually-hidden" type="radio" id="negative" name="impression" value="Скорее отрицательное">
+            <label class="radio__label" for="negative">
+             Скорее отрицательное
+            </label>
+            </p>
+          <p class="radio">
+            <input class="radio__input visually-hidden" type="radio" id="dontknow" name="impression" value="Затрудняюсь ответить">
+            <label class="radio__label" for="dontknow">
+            Затрудняюсь ответить
+            </label>
+          </p>
       </fieldset>
       <fieldset class="form_block">
         <legend class="form_title">Посещенные достопримечательности:</legend>

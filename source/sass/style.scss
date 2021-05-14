@@ -1,5 +1,6 @@
-@import "./fonts.scss";
 @import "./normalize.scss";
+@import "./fonts.scss";
+@import "./variables";
 @import "./visually-hidden";
 @import "./page-body";
 @import "./page-header";
@@ -11,5 +12,7 @@
 @import "./advantages-details";
 @import "./interest";
 @import "./social";
-@import "./map.scss";
+@import "./map";
 @import "./photo";
+@import "./photo-list";
+@import "./radio";
