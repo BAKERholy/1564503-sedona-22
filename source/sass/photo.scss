@@ -59,40 +59,21 @@
     }
 
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    .photo-list {
+      padding: 0;
+    }
+
     .photo__start {
       padding-top: 65px;
       padding-bottom: 75px;
     }
 
-    .photo__block {
-      .photo-list {
-        padding-top: 40px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: start;
-        li:first-child {
-          flex: 0 0 100%;
-          img {
-            max-height: 400px;
-          }
-        }
-      }
-    }
-    &-list {
-      border: none;
-      flex: 0 0 50%;
-      padding: 0;
-      &__text {
-        background-color: #EAEAEA;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+    .photo__block-list--second {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
-
 
 .video {
   display: flex;

@@ -50,10 +50,20 @@
       }
     }
     .photo-list__img-container {
-      margin: 0 20px;
+      margin: 0;
+      padding: 0;
     }
 
     .photo-list__photo {
+      margin: 0 auto;
       width: 100%;
     }
+
+@media  screen and (min-width: $tablet) {
+  .photo-list {
+    padding: 0;
+  }
+}
+
+
 
